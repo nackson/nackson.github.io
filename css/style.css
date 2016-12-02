@@ -1,105 +1,248 @@
-@charset "utf-8";
-
-/* ---------------------------------------- */
-/* 	reset.css
-/* ---------------------------------------- */
-
-article,section,header,footer,nav,menu,aside,figure,figcaption,main{ 
-display:block;
-padding:0;
-margin:0;
-}
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
-margin:0;
-padding:0;
-}
-table{
-border-collapse:collapse;
-border-spacing:0;
-}
-fieldset,img{ 
-border:0;
-}
-img{
-vertical-align:top;
-}
-address,caption,cite,code,dfn,em,strong,th,var,u {
-font-style:normal;
-font-weight:normal;
-text-decoration:none;
-}
-a{
-vertical-align:baseline;
-}
-a > *{
-cursor:pointer;
-}
-ol,ul{
-list-style:none;
-}
-caption,th{
-text-align:left;
-}
-h1,h2,h3,h4,h5,h6{
-font-size:100%;
-font-weight:normal;
-vertical-align: bottom;
-}
-q:before,q:after{
-content:'';
-}
-abbr,acronym {
-border:0;
+@charset "UTF-8";
+/* reset style (html5 set)
+-------------------------------------------------------------------- */
+article, section, header, footer, nav, menu, aside, figure, figcaption, main {
+  display: block;
+  padding: 0;
+  margin: 0;
 }
 
-
-/* ---------------------------------------- */
-/* 	style.css
-/* ---------------------------------------- */
-
-html{
-	background: #eee;
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-	width: 1000px;
-	min-height: 500px;
-	margin: 0 auto;
-	font: 81.25%/1.65 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', '游ゴシック体', 'Yu Gothic', 'YuGothic' , Meiryo, メイリオ,　Arial, 'Helvetica Neue',  sans-serif;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-section{
-	width: 283px;
-	height: 420px;
-	padding: 15px;
-	background: #fff;
-	position:fixed;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	font-family: "Sawarabi Mincho",'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','游ゴシック体','Yu Gothic','YuGothic',Meiryo,メイリオ,Arial,'Helvetica Neue',sans-serif;;
+fieldset, img {
+  border: 0;
 }
 
-section:after{
-	content: "";
-	display: block;
-	clear: both;
+img {
+  vertical-align: top;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var, u {
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+a {
+  outline: 0;
+  vertical-align: baseline;
+}
+
+a > * {
+  cursor: pointer;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+caption, th {
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before, q:after {
+  content: '';
+}
+
+abbr, acronym {
+  border: 0;
+}
+
+.blankIcon {
+  vertical-align: 0;
+  margin: 0 0 0 2px;
+}
+
+img.iconNew,
+img.addIcon {
+  vertical-align: middle;
+}
+
+span.anchorIn,
+span.anchorIn strong {
+  text-decoration: underline;
+  vertical-align: baseline;
+}
+
+.newsList span.anchorIn,
+.newsList span.anchorIn strong {
+  text-decoration: none;
+}
+
+.newsList a:hover span.anchorIn,
+.newsList a:hover span.anchorIn strong {
+  text-decoration: underline;
+}
+
+#sub span.anchorIn,
+footer span.anchorIn {
+  text-decoration: none;
+}
+
+/* --------------------------------------------
+
+	FileName	:	style.css
+
+-------------------------------------------- */
+html {
+  background: #eee;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  font: 81.25%/1.65 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', '游ゴシック体', 'Yu Gothic', 'YuGothic' , Meiryo, メイリオ,　Arial, 'Helvetica Neue',  sans-serif;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 15px;
+  background: #fff;
+  position: fixed;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+}
+section {
+  display: block;
+}
+section:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
 }
 
 section h2,
-section p{
-	-webkit-writing-mode: vertical-rl;
-	-moz-writing-mode: vertical-rl;
-	-ms-writing-mode: tb-rl;
-	-ms-writing-mode: vertical-rl;
-	writing-mode: vertical-rl;
-	float: right;
+section p {
+  -webkit-writing-mode: vertical-rl;
+  -moz-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  -ms-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  float: right;
 }
 
-section h1{
-	display: block;
-	width: 100%;
-	margin: 0 auto;
-	text-align: center;
-	font-size: 20px;
+section h1 {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.path {
+  /*ストロークの色や太さ*/
+  stroke: #222;
+  fill: #fff;
+  stroke-width: 1;
+  /*破線*/
+  stroke-DASHarray: 3000;
+  stroke-DASHoffset: 3000;
+  /*アニメーション*/
+  -moz-animation: DASH 2s ease-in-out .5s forwards;
+  -webkit-animation: DASH 2s ease-in-out .5s forwards;
+  -o-animation: DASH 2s ease-in-out .5s forwards;
+  animation: DASH 2s ease-in-out .5s forwards;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+@keyframes DASH {
+  0% {
+    stroke-DASHoffset: 3000;
+    fill: #fff;
+  }
+  80% {
+    stroke-DASHoffset: 2000;
+    fill: #fff;
+  }
+  100% {
+    stroke-DASHoffset: 0;
+    fill: #222;
+  }
+}
+@-moz-keyframes DASH {
+  0% {
+    stroke-DASHoffset: 3000;
+    fill: #fff;
+  }
+  80% {
+    stroke-DASHoffset: 2000;
+    fill: #fff;
+  }
+  100% {
+    stroke-DASHoffset: 0;
+    fill: #222;
+  }
+}
+@-webkit-keyframes DASH {
+  0% {
+    stroke-DASHoffset: 3000;
+    fill: #fff;
+  }
+  80% {
+    stroke-DASHoffset: 2000;
+    fill: #fff;
+  }
+  100% {
+    stroke-DASHoffset: 0;
+    fill: #222;
+  }
+}
+@-o-keyframes DASH {
+  0% {
+    stroke-DASHoffset: 3000;
+    fill: #fff;
+  }
+  80% {
+    stroke-DASHoffset: 2000;
+    fill: #fff;
+  }
+  100% {
+    stroke-DASHoffset: 0;
+    fill: #222;
+  }
+}
+@-ms-keyframes DASH {
+  0% {
+    stroke-DASHoffset: 3000;
+    fill: #fff;
+  }
+  80% {
+    stroke-DASHoffset: 2000;
+    fill: #fff;
+  }
+  100% {
+    stroke-DASHoffset: 0;
+    fill: #222;
+  }
 }

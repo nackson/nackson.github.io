@@ -1,0 +1,200 @@
+//var_set
+$contents_width: 1200px;
+$small_width: 320px;
+$main_color: #999;
+$sub_color: #666;
+$body_color: #fff;	
+$header_color: #2259a9;
+$footer_color: #114590;
+
+$link_color: #aaa;
+$hover_color: #999;
+$text_color: #222;
+
+$spot_color: #319984;
+$experience_color: #e69c33;
+$information_color: #e56482;
+
+//setMediaquery
+@mixin sp{
+	@media only screen and (max-width: 640px){
+		@content;
+	}
+}
+
+@mixin tablet{
+	@media only screen and (max-width: 960px){
+		@content;
+	}
+}
+
+@mixin pc{
+	@media only screen and (min-width: 641px){
+		@content;
+	}
+}
+
+//setIncludeCss
+@mixin opacity($opacity) {
+	opacity: $opacity;
+	$opacityIE: $opacity * 100;
+	filter: alpha(opacity=$opacityIE);
+}
+
+@mixin fontsize($fontSize, $baseFontSize:13){
+	font-size: percentage($fontSize / $baseFontSize);
+}
+//@mixin fontsize($size, $base: 13) {
+//	font-size: $size + px;
+//	font-size: ($size / $base) + rem;
+//}
+
+@mixin clearfix(){
+	&:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+@mixin textOver{
+	display: block;
+	text-indent: -9999px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+@mixin absPosition ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+	position: absolute;
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+}
+
+@mixin box($type: border-box) {
+	@include box-sizing(#{$type});
+}
+
+@mixin radius($px) {
+	-moz-border-radius: $px;
+	-webkit-border-radius: $px;
+	border-radius: $px;
+}
+
+@mixin bg($name, $dpi: 1) {
+	display: block;
+	$width: image-width($name) / $dpi;
+	$height: image-height($name) / $dpi;
+	width: $width;
+	height: $height;
+	background: image-url($name, false, false) no-repeat;
+	background-size: $width $height;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+@mixin bgSize($size){
+	-webkit-background-size: $size;
+	-moz-background-size: $size;
+	-o-background-size: $size;
+	background-size: $size;
+}
+
+@mixin placeholder {
+	&:placeholder-shown {
+		@content;
+	}
+	&::-webkit-input-placeholder {
+		@content;
+	}
+	&:-moz-placeholder {
+		opacity: 1;
+		@content;
+	}
+	&::-moz-placeholder {
+		opacity: 1;
+		@content;
+	}
+	&:-ms-input-placeholder {
+		@content;
+	}
+}
+
+//@include ghostButton(“Trebuchet”, 12px, #ffffff, 5px, #34dec6, 4px, 300ms, #000000 );
+@mixin ghostButton($font, $font-size, $font-color, $border-size, $border-color, $padding, $transition-speed, $hover-color){
+	display:inline-block;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-family: $font;
+	font-size: $font-size;
+	color:$font-color;
+	border:$border-size solid $border-color;
+	padding:$padding;
+	-webkit-transition: color $transition-speed, background $transition-speed;
+	transition: color $transition-speed, background $transition-speed;
+	&:hover {
+		background:$border-color;
+		color:$hover-color;
+	}
+}
+//@include gradient(#ff00ff, #ff00cc, vertical);
+@mixin gradient($start-color, $end-color, $orientation){
+	background: $start-color;
+	@if $orientation == vertical{
+		// vertical
+		background: -moz-linear-gradient(top,  $start-color 0%, $end-color 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$start-color), color-stop(100%,$end-color));
+		background: -webkit-linear-gradient(top,  $start-color 0%,$end-color 100%);
+		background: -o-linear-gradient(top,  $start-color 0%,$end-color 100%);
+		background: -ms-linear-gradient(top,  $start-color 0%,$end-color 100%);
+		background: linear-gradient(to bottom,  $start-color 0%,$end-color 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=0 );
+	} @else if $orientation == horizontal {
+		// horizontal
+		background: -moz-linear-gradient(left,  $start-color 0%, $end-color 100%);
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,$start-color), color-stop(100%,$end-color));
+		background: -webkit-linear-gradient(left,  $start-color 0%,$end-color 100%);
+		background: -o-linear-gradient(left,  $start-color 0%,$end-color 100%);
+		background: -ms-linear-gradient(left,  $start-color 0%,$end-color 100%);
+		background: linear-gradient(to right,  $start-color 0%,$end-color 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=1 );
+	} @else {
+		// radial
+		background: -moz-radial-gradient(center, ellipse cover,  $start-color 0%, $end-color 100%);
+		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,$start-color), color-stop(100%,$end-color));
+		background: -webkit-radial-gradient(center, ellipse cover,  $start-color 0%,$end-color 100%);
+		background: -o-radial-gradient(center, ellipse cover,  $start-color 0%,$end-color 100%);
+		background: -ms-radial-gradient(center, ellipse cover,  $start-color 0%,$end-color 100%);
+		background: radial-gradient(ellipse at center,  $start-color 0%,$end-color 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=1 );
+	}
+}
+
+
+// setSpriteImage
+
+//$parts: sprite-map('parts/*.png', $spacing: 5px);
+//$partsSp: sprite-map('partsSp/*.png', $spacing: 5px);
+
+//@mixin parts($name) {
+//	background: sprite-url($parts);
+//	background-repeat: no-repeat;
+//	overflow: hidden;
+//	width: image-width(sprite-file($parts, $name));
+//	height: image-height(sprite-file($parts, $name));
+//	$ypos: round(nth(sprite-position($parts, $name), 2));
+//	background-position: 0 $ypos;
+//}
+//
+//@mixin partsSp($name) {
+//	background: sprite-url($partsSp);
+//	@include background-size(ceil(image-width(sprite-path($partsSp)) / 2), auto);
+//	background-repeat: no-repeat;
+//	overflow: hidden;
+//	width: image-width(sprite-file($partsSp, $name)) / 2;
+//	height: image-height(sprite-file($partsSp, $name)) / 2;
+//	$ypos: round(nth(sprite-position($partsSp, $name), 2) / 2);
+//	background-position: 0 $ypos;
+// }
