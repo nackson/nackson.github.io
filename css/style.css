@@ -97,6 +97,29 @@ footer span.anchorIn {
 	FileName	:	style.css
 
 -------------------------------------------- */
+.test {
+  color: #ccc;
+  font-size: 60px;
+  font-weight: bold;
+  padding: 100px;
+}
+
+.sample2 {
+  color: blue;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+.sample2 .test {
+  color: red;
+}
+.sample2 .test-test {
+  color: red;
+}
+.sample2-test {
+  color: red;
+}
+
 html {
   background: #eee;
 }
@@ -117,16 +140,11 @@ section {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  display: inline-block;
-}
-section {
-  display: block;
 }
 section:after {
   content: "";
   display: block;
   clear: both;
-  height: 0;
 }
 
 section h2,
