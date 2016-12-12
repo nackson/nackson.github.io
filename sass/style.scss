@@ -9,11 +9,71 @@
 
 -------------------------------------------- */
 
-.test{
-	color: #ccc;
-	font-size:60px;
-	font-weight: bold;
-	padding: 100px;
+/* body
+-------------------------------------------- */
+body {
+	font-family: "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+	width: 100%;
+	*font-size: small;
+	*font: x-small;
+	-webkit-text-size-adjust: 100%;
+	line-height: 1.65;
+	font-size: 14px;
+	position: relative;
+}
+
+select,
+input,
+button,
+textarea {
+	font: 99% arial,helvetica,clean,sans-serif;
+}
+
+table {
+	font: 100%;
+	font-size: inherit;
+}
+
+a {
+	color: #aaa;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+
+ul, ol {
+	list-style-type: none;
+}
+
+img {
+	width: auto;
+	max-width: 100%;
+}
+
+.txtC {
+	text-align: center;
+}
+
+/* contents
+-------------------------------------------- */
+.snowFall{
+	display: block;
+	width: 80%;
+	height: 300px;
+	margin: 10% auto 0;
+	background: #ddd;
+	overflow: hidden;
+	position: relative;
+	@include radius(10px);
+	figure{
+		width: 80%;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+	}
 }
 
 .sample2 {
@@ -36,10 +96,6 @@
 	}
 }
 
-html{
-	background: #eee;
-}
-
 body{
 	width: 100%;
 	margin: 0 auto;
@@ -53,35 +109,14 @@ section{
 	padding: 15px;
 	background: #fff;
 	position:fixed;
+	left: 0;
+	top: 15%;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 //	font-family: "Sawarabi Mincho",'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','游ゴシック体','Yu Gothic','YuGothic',Meiryo,メイリオ,Arial,'Helvetica Neue',sans-serif;
 	@include clearfix;
-}
-
-section h2,
-section p{
-	-webkit-writing-mode: vertical-rl;
-	-moz-writing-mode: vertical-rl;
-	-ms-writing-mode: tb-rl;
-	-ms-writing-mode: vertical-rl;
-	writing-mode: vertical-rl;
-	float: right;
-}
-
-section h1{
-	display: block;
-	width: 100%;
-	margin: 0 auto;
-	text-align: center;
-	font-size: 20px;
-}
-
-canvas{
-	position: absolute;
-	left: 0;
-	top: 0;
+	z-index: -1;
 }
 
 svg{
