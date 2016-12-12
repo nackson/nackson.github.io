@@ -1,0 +1,290 @@
+@charset "UTF-8";
+/* reset style (html5 set)
+-------------------------------------------------------------------- */
+/* line 3, /Users/Tomoya/work/github/nackson.github.io/sass/import/_reset.scss */
+article, section, header, footer, nav, menu, aside, figure, figcaption, main {
+  display: block;
+  padding: 0;
+  margin: 0; }
+
+/* line 9, /Users/Tomoya/work/github/nackson.github.io/sass/import/_reset.scss */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+/* line 14, /Users/Tomoya/work/github/nackson.github.io/sass/import/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 19, /Users/Tomoya/work/github/nackson.github.io/sass/import/_reset.scss */
+fieldset, img {
+  border: 0; }
+
+/* line 23, /Users/Tomoya/work/github/nackson.github.io/sass/import/_reset.scss */
+img {
+  vertical-align: top; }
+
+/* line 27, /Users/Tomoya/work/github/nackson.github.io/sass/import/_reset.scss */
+address, caption, cite, code, dfn, em, strong, th, var, u {
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none; }
+
+/* line 33, /Users/Tomoya/work/github/nackson.github.io/sass/import/_reset.scss */
+a {
+  outline: 0;
+  vertical-align: baseline; }
+
+/* line 38, /Users/Tomoya/work/github/nackson.github.io/sass/import/_reset.scss */
+a > * {
+  cursor: pointer; }
+
+/* line 42, /Users/Tomoya/work/github/nackson.github.io/sass/import/_reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 46, /Users/Tomoya/work/github/nackson.github.io/sass/import/_reset.scss */
+caption, th {
+  text-align: left; }
+
+/* line 50, /Users/Tomoya/work/github/nackson.github.io/sass/import/_reset.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+/* line 55, /Users/Tomoya/work/github/nackson.github.io/sass/import/_reset.scss */
+q:before, q:after {
+  content: ''; }
+
+/* line 59, /Users/Tomoya/work/github/nackson.github.io/sass/import/_reset.scss */
+abbr, acronym {
+  border: 0; }
+
+/* line 64, /Users/Tomoya/work/github/nackson.github.io/sass/import/_reset.scss */
+.blankIcon {
+  vertical-align: 0;
+  margin: 0 0 0 2px; }
+
+/* line 70, /Users/Tomoya/work/github/nackson.github.io/sass/import/_reset.scss */
+img.iconNew,
+img.addIcon {
+  vertical-align: middle; }
+
+/* line 75, /Users/Tomoya/work/github/nackson.github.io/sass/import/_reset.scss */
+span.anchorIn,
+span.anchorIn strong {
+  text-decoration: underline;
+  vertical-align: baseline; }
+
+/* line 81, /Users/Tomoya/work/github/nackson.github.io/sass/import/_reset.scss */
+.newsList span.anchorIn,
+.newsList span.anchorIn strong {
+  text-decoration: none; }
+
+/* line 85, /Users/Tomoya/work/github/nackson.github.io/sass/import/_reset.scss */
+.newsList a:hover span.anchorIn,
+.newsList a:hover span.anchorIn strong {
+  text-decoration: underline; }
+
+/* line 90, /Users/Tomoya/work/github/nackson.github.io/sass/import/_reset.scss */
+#sub span.anchorIn,
+footer span.anchorIn {
+  text-decoration: none; }
+
+/* --------------------------------------------
+
+	FileName	:	style.css
+
+-------------------------------------------- */
+/* body
+-------------------------------------------- */
+/* line 14, /Users/Tomoya/work/github/nackson.github.io/sass/style.scss */
+body {
+  font-family: "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+  width: 100%;
+  *font-size: small;
+  *font: x-small;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.65;
+  font-size: 14px;
+  position: relative; }
+
+/* line 28, /Users/Tomoya/work/github/nackson.github.io/sass/style.scss */
+select,
+input,
+button,
+textarea {
+  font: 99% arial,helvetica,clean,sans-serif; }
+
+/* line 32, /Users/Tomoya/work/github/nackson.github.io/sass/style.scss */
+table {
+  font: 100%;
+  font-size: inherit; }
+
+/* line 37, /Users/Tomoya/work/github/nackson.github.io/sass/style.scss */
+a {
+  color: #aaa;
+  text-decoration: underline; }
+
+/* line 41, /Users/Tomoya/work/github/nackson.github.io/sass/style.scss */
+a:hover {
+  text-decoration: none; }
+
+/* line 45, /Users/Tomoya/work/github/nackson.github.io/sass/style.scss */
+ul, ol {
+  list-style-type: none; }
+
+/* line 49, /Users/Tomoya/work/github/nackson.github.io/sass/style.scss */
+img {
+  width: auto;
+  max-width: 100%; }
+
+/* line 54, /Users/Tomoya/work/github/nackson.github.io/sass/style.scss */
+.txtC {
+  text-align: center; }
+
+/* contents
+-------------------------------------------- */
+/* line 60, /Users/Tomoya/work/github/nackson.github.io/sass/style.scss */
+.snowFall {
+  display: block;
+  width: 80%;
+  height: 100%;
+  margin: 10% auto 0;
+  background: #ddd;
+  overflow: hidden;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px; }
+  /* line 69, /Users/Tomoya/work/github/nackson.github.io/sass/style.scss */
+  .snowFall figure {
+    width: 80%;
+    height: 100%;
+    margin: auto; }
+
+/* line 76, /Users/Tomoya/work/github/nackson.github.io/sass/style.scss */
+.sample2 {
+  color: blue;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px; }
+  /* line 81, /Users/Tomoya/work/github/nackson.github.io/sass/style.scss */
+  .sample2 .test {
+    color: red; }
+    /* line 83, /Users/Tomoya/work/github/nackson.github.io/sass/style.scss */
+    .sample2 .test .sample2 .test-test {
+      color: red; }
+  /* line 89, /Users/Tomoya/work/github/nackson.github.io/sass/style.scss */
+  .sample2 .sample2-test {
+    color: red; }
+
+/* line 96, /Users/Tomoya/work/github/nackson.github.io/sass/style.scss */
+body {
+  width: 100%;
+  margin: 0 auto;
+  font: 81.25%/1.65 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', '游ゴシック体', 'Yu Gothic', 'YuGothic' , Meiryo, メイリオ,　Arial, 'Helvetica Neue',  sans-serif; }
+
+/* line 102, /Users/Tomoya/work/github/nackson.github.io/sass/style.scss */
+section {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 0;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: -1; }
+  /* line 54, /Users/Tomoya/work/github/nackson.github.io/sass/import/_mixin.scss */
+  section:after {
+    content: "";
+    display: block;
+    clear: both; }
+
+/* line 118, /Users/Tomoya/work/github/nackson.github.io/sass/style.scss */
+svg {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+/* line 124, /Users/Tomoya/work/github/nackson.github.io/sass/style.scss */
+.path {
+  /*ストロークの色や太さ*/
+  stroke: #222;
+  fill: #fff;
+  stroke-width: 1;
+  /*破線*/
+  stroke-DASHarray: 3000;
+  stroke-DASHoffset: 3000;
+  /*アニメーション*/
+  -moz-animation: DASH 2s ease-in-out 0.5s forwards;
+  -webkit-animation: DASH 2s ease-in-out 0.5s forwards;
+  -o-animation: DASH 2s ease-in-out 0.5s forwards;
+  animation: DASH 2s ease-in-out 0.5s forwards;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+@keyframes DASH {
+  0% {
+    stroke-DASHoffset: 3000;
+    fill: #fff; }
+  80% {
+    stroke-DASHoffset: 2000;
+    fill: #fff; }
+  100% {
+    stroke-DASHoffset: 0;
+    fill: #222; } }
+
+@-moz-keyframes DASH {
+  0% {
+    stroke-DASHoffset: 3000;
+    fill: #fff; }
+  80% {
+    stroke-DASHoffset: 2000;
+    fill: #fff; }
+  100% {
+    stroke-DASHoffset: 0;
+    fill: #222; } }
+
+@-webkit-keyframes DASH {
+  0% {
+    stroke-DASHoffset: 3000;
+    fill: #fff; }
+  80% {
+    stroke-DASHoffset: 2000;
+    fill: #fff; }
+  100% {
+    stroke-DASHoffset: 0;
+    fill: #222; } }
+
+@-o-keyframes DASH {
+  0% {
+    stroke-DASHoffset: 3000;
+    fill: #fff; }
+  80% {
+    stroke-DASHoffset: 2000;
+    fill: #fff; }
+  100% {
+    stroke-DASHoffset: 0;
+    fill: #222; } }
+
+@-ms-keyframes DASH {
+  /* line 164, /Users/Tomoya/work/github/nackson.github.io/sass/style.scss */
+  0% {
+    stroke-DASHoffset: 3000;
+    fill: #fff; }
+  /* line 165, /Users/Tomoya/work/github/nackson.github.io/sass/style.scss */
+  80% {
+    stroke-DASHoffset: 2000;
+    fill: #fff; }
+  /* line 166, /Users/Tomoya/work/github/nackson.github.io/sass/style.scss */
+  100% {
+    stroke-DASHoffset: 0;
+    fill: #222; } }
+
+/*# sourceMappingURL=style.css.map */
