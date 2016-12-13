@@ -27,11 +27,11 @@ if(_ua.ios||_ua.isTablet||_ua.isMobile){
 $(window).bind('resize load', function(){
 	$("html").css("zoom" , $(window).width()/screen.width );
 	$('.snowFall').snowfall({
-		flakeCount: 20,
+		flakeCount: 15,
 		minSize: 15,
 		maxSize:20,
 		minSpeed:1,
-		maxSpeed:4,
+		maxSpeed:2,
 		round : true
 	})
 });
