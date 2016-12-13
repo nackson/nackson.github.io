@@ -164,37 +164,15 @@ img {
   margin: auto;
 }
 
-.sample2 {
-  color: blue;
-  text-align: center;
-  margin: 0 auto;
-  padding: 10px;
-}
-.sample2 .test {
-  color: red;
-}
-.sample2 .test-test {
-  color: red;
-}
-.sample2-test {
-  color: red;
-}
-
-body {
-  width: 100%;
-  margin: 0 auto;
-  font: 81.25%/1.65 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', '游ゴシック体', 'Yu Gothic', 'YuGothic' , Meiryo, メイリオ,　Arial, 'Helvetica Neue',  sans-serif;
-}
-
 section {
   width: 100%;
   height: 100%;
   margin: auto;
   padding: 0;
   background: #fff;
-  position: fixed;
+  position: absolute;
   left: 0;
-  top: 0;
+  top: -50px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -206,10 +184,15 @@ section:after {
   clear: both;
 }
 
-svg {
+svg#year {
   position: absolute;
   left: 0;
   top: 0;
+}
+svg#text {
+  position: absolute;
+  left: 0;
+  top: 120px;
 }
 
 .path {

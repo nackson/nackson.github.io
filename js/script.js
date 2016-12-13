@@ -26,13 +26,6 @@ if(_ua.ios||_ua.isTablet||_ua.isMobile){
 
 $(window).bind('resize load', function(){
 	$("html").css("zoom" , $(window).width()/screen.width );
-});
-
-
-
-
-//modal
-$(function(){
 	$('.snowFall').snowfall({
 		flakeCount: 20,
 		minSize: 15,
@@ -41,6 +34,13 @@ $(function(){
 		maxSpeed:4,
 		round : true
 	})
+});
+
+
+
+
+//modal
+$(function(){
 	//画面中央を計算する関数を実行
 //	centerringResize();
 
