@@ -94,12 +94,12 @@ svg{
 	&#year{
 		position: absolute;
 		left: 0;
-		top: 0;
+		top: 15px;
 	}
 	&#text{
 		position: absolute;
 		left: 0;
-		top: 120px;
+		top: 125px;
 	}
 }
 
@@ -111,11 +111,11 @@ svg{
 	stroke-DASHarray: 3000;
 	stroke-DASHoffset:3000;
 	/*アニメーション*/
-	-moz-animation:DASH 2s ease-in-out .5s forwards;
-	-webkit-animation:DASH 2s ease-in-out .5s forwards;
-	-o-animation:DASH 2s ease-in-out .5s forwards;
-	animation:DASH 2s ease-in-out .5s forwards;
-	-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out;
+	-moz-animation:DASH 4s ease-in-out 0.8s forwards;
+	-webkit-animation:DASH 4s ease-in-out 0.8s forwards;
+	-o-animation:DASH 4s ease-in-out 0.8s forwards;
+	animation:DASH 4s ease-in-out 0.8s forwards;
+	-webkit-transition:all .5s ease-in-out;transition:all .3s ease-in-out;
 }
 
 @keyframes DASH{
