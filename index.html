@@ -12,21 +12,24 @@
     <body>
 		<a-scene embedded arjs="debugUIEnabled:false; sourceType: webcam;" vr-mode-ui="enabled: false">
 			<a-assets>
-				 <a-asset-item id="dog" src="models/Mesh_Boar.gltf"></a-asset-item>
+				<a-asset-item id="boar" src="models/Mesh_Boar.gltf"></a-asset-item>
 			</a-assets>
-	
+
 			<a-marker preset='custom' type='pattern' url="marker/01.patt">
-			  <a-text value="Happy New Year!\nIntelligent Technology" position=" 0 0 1" align="center" rotation="-90 0 0" color="#DD4827">
-			  </a-text>
-			  
-			  <a-entity gltf-model="#dog" play-all-model-animations="" position="0 0 0" rotation="0 0 0" scale="0.0025 0.001 0.001" visible="true">
-				  <a-animation attribute="rotation" repeat="indefinite" direction="alternate" dur="500" from="0 0 0" to="10 0 0"></a-animation>
-			  </a-entity>
+
+				<a-entity text="value:Happy New Year!;color:#9B003F;shader:msdf;font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/sigmarone/SigmarOne-Regular.json;" position="0 0 1" scale="1.5 1.5 1.5" align="center"></a-entity>
+
+				<!-- <a-text value="Happy New Year!\nIntelligent Technology" position=" 0 0 1" align="center" rotation="-90 0 0" color="#DD4827"></a-text> -->
+
+				<a-entity gltf-model="#boar" play-all-model-animations="" position="0 0 0" rotation="0 0 0" scale="0.015 0.01 0.01" visible="true">
+					<a-animation attribute="rotation" repeat="indefinite" direction="alternate" dur="500" from="0 0 0" to="10 0 0"></a-animation>
+				</a-entity>
+
 			</a-marker>
-	
+
 			<a-entity camera></a-entity>
-			
-		  </a-scene>
-	
-    </body>
+
+		</a-scene>
+
+	</body>
   </html>
